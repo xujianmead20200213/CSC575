@@ -5,19 +5,21 @@ https://github.com/xujianmead20200213/HelloWorld.git
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int[] testArray = new int[12];
-        int[] testArray1 = {32,27,64,18,95,14,90,70,60,37};
+
+        final int ARRAY_LENGTH = 10;
+        int[] testArray = new int[ARRAY_LENGTH];
         for(int i=0; i < testArray.length; i++){
-            testArray[i] = i+1;
+            testArray[i] = i * 2 + 2;
         }
         System.out.printf("%1s%7s%n","Index","Value");
         for(int i=0; i < testArray.length; i++){
             System.out.printf("%5d%7d%n", i, testArray[i]);
         }
-
-        System.out.printf("%1s%7s%n","Index1","Value1");
-        for(int i=0; i < testArray1.length; i++){
-            System.out.printf("%5d%7d%n", i, testArray1[i]);
-        }
+        
+//        int[] testArray1 = {32,27,64,18,95,14,90,70,60,37};
+//        System.out.printf("%1s%7s%n","Index1","Value1");
+//        for(int i=0; i < testArray1.length; i++){
+//            System.out.printf("%5d%7d%n", i, testArray1[i]);
+//        }
     }
 }
